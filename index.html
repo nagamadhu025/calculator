@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+</head>
+<link href="style.css" rel="stylesheet">
+
+<body>
+
+    <h1>Calculator</h1>
+
+    <form class="calculator">
+        <div class="form-group">
+            <input type="=number"  name="number">
+        </div>
+        <div class="form-group">
+            <button type="button" onclick="addvalue('%') ">%</button>
+            <button type="button" onclick="clearvalue('C')">C</button>
+            <button type="button" onclick="deletevalue('DEL')" >DEL</button>
+            <button type="button" onclick="addvalue('/')" >/</button>
+        </div>
+        <div class="form-group">
+            <button type="button" onclick="addvalue('1')" >1</button>
+            <button type="button" onclick="addvalue('2')" >2</button>
+            <button type="button" onclick="addvalue('3')" >3</button >
+                <button type="button" onclick="addvalue('+')" >+</button>
+        </div>
+        <div class="form-group">
+            <button type="button" onclick="addvalue('4')" >4</button >
+                <button type="button" onclick="addvalue('5')" >5</button  >
+                    <button type="button" onclick="addvalue('6')" >6</button>
+                    <button type="button" onclick="addvalue('-')" >-</button >
+        </div>
+        <div class="form-group">
+            <button type="button" onclick="addvalue('7')" >7</button >
+                <button type="button" onclick="addvalue('8')" >8</button >
+                    <button type="button" onclick="addvalue('9')" >9</button>
+                    <button type="button" onclick="addvalue('*')" >*</button>
+        </div>
+        <div class="form-group">
+            <button type="button" onclick="addvalue('00')" >00</button>
+            <button type="button" onclick="addvalue('0')" >0</button>
+            <button type="button" onclick="addvalue('.')" >.</button >
+                <button type="button" onclick="evaluatevalue()"  class="evaluate">=</button >
+        </div>
+
+    </form>
+    <script src="index.js"></script>
+</body>
+
+</html>
